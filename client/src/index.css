@@ -1,0 +1,175 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+   /* Fill full viewport height */
+  width: 100%;
+  display: flex;
+   height: 100vh; /* Fill full screen */
+  width: 100%;
+  background-image: url("/pattari.jpg"); /* Must be in public/ folder */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;  /* Optional: to layer content on top */
+  top: 0;
+  left: 0;
+}
+
+.register-box{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px 20px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px 0.5px rgb(150, 149, 149);
+}
+
+.register-box h2{
+  text-align: center;
+  font-weight: 700;
+}
+
+.input-group label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group input{
+  padding: 8px;
+  width: 95%;
+  border: 1px solid linen;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.btn-div{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.btn{
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+
+.green{
+  background-color: rgb(49, 233, 49);
+}
+
+.link-div p{
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(42, 42, 244);
+}
+
+.link-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-div{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px 20px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px 0.5px rgb(150, 149, 149);
+
+}
+
+.login-div h2{
+  text-align: center;
+}
+
+.login-div p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  padding: 0;
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-div a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.footer-div a:hover {
+  color: #e1306c; 
+  transform: scale(1.2);
+}
+
+.inside-chruch,.father-image{
+   width: 100vw;       
+  background-position: center;   
+  top: 0;
+  left: 0;
+}
+
+
+.home-div h2{
+  text-align: center;
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+  background: url("../public/pattari.jpg") center;
+  background-clip: text;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: roll 6s linear infinite;
+}
+
+@keyframes roll{
+   to{
+      background-position-x: 100px; ;
+    }
+}
+
+
+
